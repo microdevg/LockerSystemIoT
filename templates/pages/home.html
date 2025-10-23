@@ -3,14 +3,15 @@
 {% block title %}Inicio | LockerSystem IoT{% endblock %}
 
 {% block content %}
-<div class="text-center py-5">
+<main class="text-center py-5">
     <h1 class="display-5 fw-bold text-dark">Bienvenido a LockerSystem IoT</h1>
     <p class="lead text-secondary mt-3">
         Administra tus lockers inteligentes conectados a la nube de forma simple y segura.
     </p>
     <div class="mt-4">
-        <a href="{% url 'home' %}" class="btn btn-primary btn-lg me-2">Acerca de nosotros</a>
-        <a href="#" class="btn btn-outline-secondary btn-lg">Configuración</a>
+        {# Cambiado 'home' por 'about' si ese enlace es realmente "Acerca de nosotros" #}
+        <a href="{% url 'home' %}" class="btn btn-primary btn-lg me-2" role="button">Acerca de nosotros</a>
+        <a href="{% url 'allDevices' %}" class="btn btn-outline-secondary btn-lg" role="button">Dispositivos conectados</a>
     </div>
-</div>
+</main>
 {% endblock %}
