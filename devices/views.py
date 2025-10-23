@@ -1,9 +1,11 @@
-from django.views.generic import TemplateView
+from django.views.generic import ListView
 from django.shortcuts import render
 
 from .models import DeviceIoT
 # Create your views here.
 
-def list_all_devices(request):
-    all = DeviceIoT.objects.all()
-    return render(request,"devices/list_devices.html",{"devices":all})
+class list_all_devices(ListView):
+    #all = DeviceIoT.objects.all()
+    model = DeviceIoT
+    template_name = "devices/list_devices.html"
+    context_object_name = 'devices'
