@@ -1,0 +1,63 @@
+# === Python ===
+__pycache__/
+*.py[cod]
+*$py.class
+
+# === Entorno virtual ===
+.venv/
+env/
+venv/
+ENV/
+env.bak/
+
+# === Archivos temporales ===
+*.log
+*.pot
+*.pyc
+*.pyo
+*.tmp
+*.temp
+*.bak
+
+# === Configuración de Django ===
+*.sqlite3
+db.sqlite3
+/media/
+staticfiles/
+static_root/
+static/
+local_settings.py
+
+# === Archivos de migración (opcional si no se versionan) ===
+# Si quieres mantener las migraciones en Git, comenta esta línea
+*/migrations/__pycache__/
+*/migrations/*.pyc
+# */migrations/   <-- descomenta si no quieres guardar migraciones
+
+# === Archivos de compilación ===
+build/
+dist/
+*.egg-info/
+*.manifest
+*.spec
+
+# === IDEs ===
+# VSCode
+.vscode/
+# PyCharm
+.idea/
+
+# === Sistema operativo ===
+# macOS
+.DS_Store
+# Linux
+*~
+# Windows
+Thumbs.db
+ehthumbs.db
+desktop.ini
+
+# === Archivos de entorno ===
+.env
+.env.*
+*.env
