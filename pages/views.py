@@ -4,10 +4,10 @@ from django.shortcuts import render
 
 
 def home_page_view(request):
-    return render(request, "home.html")
+    return render(request, "pages/home.html")
 
 class AboutPageView(TemplateView):
-    template_name = "about.html"
+    template_name = "pages/about.html"
 
 
     def get_context_data(self, **kwargs): # new
